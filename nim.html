@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./nim.css">
+</head>
+<body>
+  <div class="top">
+
+  <div class="buttons">
+  <input type="button" class="btn rainbow" id="btn" value="random">
+  <input type="button" class="btnsmart rainbow2" id="btnsmart" value="smart">
+  </div>
+
+  <div class="input">
+  <label for="number">Please enter a number from 1-9</label>
+  <input type="number" name="number" id="number" min="1" max="9">
+  </div>
+
+  </div>
+
+  <div class="output container">
+    <div class="useroutput num">user</div>
+    <div class="result"></div>
+    <div class="pcoutput num">pc</div>
+  </div>
+
+  <button class="reset hide">Try again</button>
+
+  <script src="./nim.js"></script>
+</body>
+</html>

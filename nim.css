@@ -1,0 +1,181 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: lightslategrey;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  .useroutput{
+    width: 300px;
+    height: 200px;
+    font-family: 'Mochiy Pop One', sans-serif;
+  }
+  .pcoutput{
+    width: 300px;
+    height: 200px;
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(5, 222, 5);
+  }
+  .output {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    /* margin-top: 10%; */
+    gap: 60px;
+  }
+  .result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    font-family: 'Roboto Mono', monospace;
+
+  }
+  .num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+  }
+
+  .rainbow{
+background-color: #343A40;
+border-radius: 16px;  
+color: #fff;
+cursor: pointer;
+padding: 12px 32px; 
+border: none;
+font-family: 'Roboto Mono', monospace;
+font-size: 18px;
+}
+
+.rainbow2{
+background-color: #343A40;
+border-radius: 16px;  
+color: #fff;
+cursor: pointer;
+padding: 12px 32px; 
+border: none;
+font-family: 'Roboto Mono', monospace;
+font-size: 18px;
+}
+
+.top {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+gap: 50px;
+height: 40%;
+}
+
+.buttons {
+display: flex;
+gap: 80%;
+justify-content: center;
+}
+
+.input {
+font-family: 'Roboto Mono', monospace;
+font-size: 20px;
+}
+
+.rainbow:hover{
+background-image: linear-gradient( to right, 
+    #E7484F,
+    #E7484F 16.65%,
+    #F68B1D 16.65%,
+    #F68B1D 33.3%,
+    #FCED00 33.3%,
+    #FCED00 49.95%,
+    #009E4F 49.95%,
+    #009E4F 66.6%,
+    #00AAC3 66.6%,
+    #00AAC3 83.25%,
+    #732982 83.25%,
+    #732982 100%,
+    #E7484F 100%);
+animation:slide 6s linear infinite;
+font-weight: bold;
+}
+
+.rainbow2:hover{
+background-image: linear-gradient( to right, 
+    #21f600,
+    #1fe900 20%,
+    #19d700 40%,
+    #14c700 60%,
+    #15ff00 100%,
+    #21f600
+    );
+animation:slide 3s linear infinite;
+font-weight: bold;
+color: #343A40;
+}
+
+@keyframes slide { 
+to {
+  background-position:20vw;
+}
+}
+
+.hide {
+display: none;
+}
+
+.opacity {
+opacity: 0;
+}
+
+#number {
+height: 70px;
+width: 70px;
+text-align: center;
+font-size: 2rem;
+border-radius: 5px;
+}
+
+.reset {
+width: 80px;
+height: 40px;
+border-radius: 15%;
+background-color: rgb(202, 200, 200);
+box-shadow: 0px 9px rgb(72, 72, 72);
+}
+
+.reset:hover {
+cursor: pointer;
+background-color: rgb(152, 152, 152);
+}
+
+.reset:active {
+box-shadow: 0px 5px rgb(72, 72, 72);
+transform: translateY(4px);
+}
+
+.container {
+border-top-left-radius: 37px 140px;
+border-top-right-radius: 23px 130px;
+border-bottom-left-radius: 110px 19px;
+border-bottom-right-radius: 120px 24px;
+display: flex;
+border: solid 3px #6e7491;
+max-width: 850px;
+width: 70%;
+margin: 100px auto 15px ;
+transform: rotate(-1deg);
+box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
+transition: all 0.13s ease-in;
+}
+
+.container:hover {
+transform: translateY(-10px) rotate(1deg);
+box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
+}
+
+.container:hover {
+transform: translateY(4px) rotate(-5deg);
+}
